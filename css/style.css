@@ -1,8 +1,8 @@
-@import url(/css/general.css);
-@import url(/css/hero.css);
-@import url(/css/productos.css);
-@import url(/css/galeria.css);
-@import url(/css/contacto.css);
+@import url(./css/general.css);
+@import url(./css/hero.css);
+@import url(./css/productos.css);
+@import url(./css/galeria.css);
+@import url(./css/contacto.css);
 
 .hero img {
     width: 100%;
