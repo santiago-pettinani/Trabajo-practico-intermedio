@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahumoslo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/03122fd4b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><i class="fa-solid fa-moon"></i>Sahumoslo</a>
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="./index.html">Inicio</a></li>
+                <li class="navbar-item"><a href="./Productos.html">Productos</a></li>
+                <li class="navbar-item"><a href="./galeria.html">Galeria</a></li>
+                <li class="navbar-item"><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-contacto">Envianos tu consulta</h1>
+        <section class="main-form">
+            <form class="formulario">
+                <div class="fila">
+                <div class="columna">
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Nombre" name="name" id="name" required>
+                </div>
+                <div class="columna">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" placeholder="Apellido" name="lastName" id="lastName" required>
+                </div>
+                </div>
+                <div class="fila">
+                <div class="columna">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email" required>
+                </div>
+                <div class="columna">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" placeholder="+54 11 1234-5678" name="phone" id="phone" required>
+                </div>
+                </div>
+                <div class="columna">
+                    <label for="reason">Motivo de contacto</label>
+                    <select name="reason" id="reason" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="Mayorista">Pedidos por mayor</option>
+                        <option value="trabajo">Trabaja con nosotros</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <fieldset class="columna">
+                    <legend>Compraste alguna vez en Sahumoslo?</legend>
+                    <div class="formulario-radio fila">
+                    <div class="respuestas">
+                        <label for="first-yes">Si</label>
+                        <input type="radio" id="first-yes" name="first-purchase" value="si" required>
+                    </div>
+                    <div class="respuestas">
+                        <label for="first-no">No</label>
+                        <input type="radio" id="first-no" name="first-purchase" value="no" required>
+                    </div>
+                    </div>
+                </fieldset>
+                <div class="columna">
+                    <label for="comment">Envianos tu comentario</label>
+                    <textarea name="comment" id="comment" placeholder="En que te podemos ayudar?" required></textarea>
+                </div>
+                <div class="botones">
+                    <button type="submit">Enviar Mensaje</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h2><i class="fa-solid fa-moon icon"></i>Sahumoslo</h2>
+            <p>Aromas que inspiran cada momento.</p>
+        </div>
+        <nav class="navbar-footer">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Productos.html">Productos</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+            <div class="redes">
+                <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

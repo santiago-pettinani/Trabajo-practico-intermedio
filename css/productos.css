@@ -1,0 +1,67 @@
+.titulo-productos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    color: var(--text);
+    text-align: center;
+}
+.card-producto {
+     width: 300px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.imagen-producto {
+    height: 250px;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-producto h3 {
+    font-family: var(--font-title);
+}
+.card-producto p {
+    font-family: var(--font-text);
+}
+.card-producto a {
+    font-weight: 600;
+    font-family: var(--font-text);
+}
+.card-producto h3, .card-producto p, .card-producto a {
+    margin: 0 1rem 0 1rem;
+}
+.card-producto a {
+    margin-top: auto;
+    background-color: var(--bg);
+    border: solid 2px var(--dark);
+    padding: .2rem;
+    border-radius: 15px;
+    color: var(--dark);
+}
+.card-producto a:hover {
+   background-color: var(--bg-hover); 
+}
+.card-producto:hover {
+    box-shadow: 0px 10px 15px rgba(43, 33, 24, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+     transition: transform 0.7s ease, box-shadow 0.3s ease;
+}

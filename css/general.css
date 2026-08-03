@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #8B5E3C;
+    --dark: #2B2118;
+    --accent: #D9A441;
+    --accent-hover: #b8862f;
+    --bg: #E8DED0;
+    --bg-body: #DCCDBB;
+    --text: #3A3028;
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-title: "Roboto Slab", serif;
+    --font-text: "Montserrat", sans-serif;
+    --bg-hover: #D8CCBA;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    background-color: var(--dark);
+    flex-wrap: wrap;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-list a:hover {
+    text-shadow: 0px 0px 10px var(--white);
+    color: var(--accent);
+}
+
+.navbar-item {
+    font-family: var(--font-text);
+    font-size: .9rem;
+}
+
+.logo {
+    display: flex;
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 2.7rem;
+    font-weight: bold;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+.footer-info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.footer-info h2 {
+    font-family: var(--font-title);
+}
+
+.footer-info p {
+    font-family: var(--font-text);
+}
+
+.navbar-footer {
+    padding: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--font-text);
+}
+
+.navbar-footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar-footer a:hover {
+    text-shadow: 0px 0px 10px var(--white);
+    color: var(--accent);
+}
+
+.redes {
+    gap: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+footer {
+    background-color: var(--dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    flex-wrap: wrap;
+}
+fieldset {
+    border: solid 1px var(--primary);
+}
+input,
+select,
+textarea {
+    border: 2.5px solid var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    padding: .7rem;
+}
+textarea {
+    resize: none;
+    height: 4rem;
+}
