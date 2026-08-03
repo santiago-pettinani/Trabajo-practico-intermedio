@@ -1,8 +1,7 @@
-@import url(./css/general.css);
-@import url(./css/hero.css);
-@import url(./css/productos.css);
-@import url(./css/galeria.css);
-@import url(./css/contacto.css);
+@import url(../css/general.css);
+@import url(../css/productos.css);
+@import url(../css/galeria.css);
+@import url(../css/contacto.css);
 
 .hero img {
     width: 100%;
@@ -14,7 +13,7 @@
 .hero {
     width: 100%;
     min-height: 80vh;
-    background-image: linear-gradient(rgba(70, 38, 26, 0.55)), url(/assets/img/banner.jpg);
+    background-image: linear-gradient(rgba(70, 38, 26, 0.55)), url(../assets/img/banner.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
